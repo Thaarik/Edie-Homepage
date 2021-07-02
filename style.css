@@ -1,0 +1,160 @@
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #FFFFFF;
+ 
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+  margin: 0 auto;
+}
+
+.head-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 53px;
+  color: #333333;
+}
+
+.navbar {
+  max-width: 703px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar a {
+  margin: 8px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #333333
+}
+.navbar a:hover{
+  color:#6b6b6b
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.section1-heading1 {
+  align-self: auto;
+  height: auto;
+  max-width: 543px;
+}
+
+.section1-heading1 p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2D9CDB;
+
+}
+
+.section1-heading1 .beautiful p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  color: #333333;
+  width: 543px;
+}
+
+.mainimage {
+  margin: 0 auto;
+}
+
+.mainimage img {
+  width: 100%;
+  max-width: 1332px;
+  height: auto;
+  border-radius: 18px;
+}
+
+.section1-heading2 {
+  align-self: center;
+  justify-self: center;
+  max-width: 366px;
+}
+
+.section1-heading2 .beautiful p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  color: #333333;
+
+}
+
+.section1-heading2 p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.emailformone {
+  display: flex;
+  flex-direction: column;
+}
+
+#labelone {
+  color: #828282, 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+#emailbox {
+  width: 100%;
+  max-width: 350px0;
+  height: 57px;
+  background-color: #F2F2F2;
+  border-radius: 12px;
+  border:1px solid #cacaca
+}
+
+#emailbox::placeholder {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #BDBDBD, 100%;
+  padding-left: 20px;
+}
+
+#buttonbox {
+  width: 100%;
+  max-width: 94px;
+  height: 49px;
+  background-color: #2D9CDB;
+  border-radius: 12px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #F2F2F2;
+  align-self: flex-end;
+  margin-top: -55px;
+  border:1px solid #4fb5f0;
+}
+
