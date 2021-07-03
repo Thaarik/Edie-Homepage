@@ -1,9 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   max-width: 1440px;
   margin: 0 auto;
   background: #FFFFFF;
- 
+
 }
 
 nav {
@@ -40,8 +50,9 @@ nav {
   text-decoration: none;
   color: #333333
 }
-.navbar a:hover{
-  color:#6b6b6b
+
+.navbar a:hover {
+  color: #6b6b6b
 }
 
 .section1 {
@@ -128,7 +139,13 @@ nav {
   height: 57px;
   background-color: #F2F2F2;
   border-radius: 12px;
-  border:1px solid #cacaca
+  border: 1px solid #cacaca;
+  transition: bakground 0.25s, border-color 0.25s, color 0.25s;
+  outline: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding:0.8em;
 }
 
 #emailbox::placeholder {
@@ -141,6 +158,9 @@ nav {
   padding-left: 20px;
 }
 
+#emailbox:focus{
+  background-color: #ececec;
+}
 #buttonbox {
   width: 100%;
   max-width: 94px;
@@ -154,7 +174,217 @@ nav {
   line-height: 27px;
   color: #F2F2F2;
   align-self: flex-end;
-  margin-top: -55px;
-  border:1px solid #4fb5f0;
+  margin-top: -53px;
+  margin-right: 5px;
+  border: 1px solid #4fb5f0;
+  cursor: pointer;
+  margin-bottom: 50px;
 }
 
+.section2 {
+  max-width: 1110px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#section2-head {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  color: #333333;
+  max-width: 346px;
+}
+
+.section2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  grid-auto-rows: minmax(422px, auto);
+  align-items: center;
+}
+
+.card1,
+.card2,
+.card3 {
+  max-width: 341px;
+  height: 422px;
+}
+
+.rect1,
+.rect2,
+.rect3 {
+  max-width: 67px;
+  min-height: 67px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 33px;
+  margin-top: 30px;
+}
+
+.rect1 {
+  background-color: #2D9CDB;
+}
+
+.rect2 {
+  background-color: #27AE60;
+}
+
+.rect3 {
+  background-color: #EB5757;
+}
+
+.material-icons {
+  color: #FFFFFF;
+  font-size: 27px;
+}
+
+.content1,
+.content2,
+.content3 {
+  margin: 30px auto;
+  max-width: 273px;
+  min-height: 96px;
+}
+
+.content1 :first-child,
+.content2 :first-child,
+.content3 :first-child {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.content1 :nth-child(2),
+.content2 :nth-child(2),
+.content3 :nth-child(2) {
+  margin-top: 40px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F;
+
+}
+
+#card-button1,
+#card-button2,
+#card-button3 {
+  color: #828282;
+  margin-top: 30px;
+  background-color: #E0E0E0;
+  border-radius: 12px;
+  max-width: 116px;
+  height: 42px;
+  border: 1px solid #ececec;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  transition: 0.6s;
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.5);
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.card1:hover #card-button1,
+.card2:hover #card-button2,
+.card3:hover #card-button3 {
+  background-color: #2D9CDB;
+  color: #FFFFFF;
+  transition: 0.6s;
+}
+
+#section3-head {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  color: #333333;
+  max-width: 448px;
+}
+
+.section3 {
+  max-width: 1110px;
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+}
+
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.2em;
+  /* grid-auto-rows: minmax(545px, auto); */
+  
+}
+
+.photo-container .photo1{
+  align-self: auto;
+margin-top: 150px;
+}
+.photo-container .photo4{
+  align-self: auto;
+margin-top: -50px;
+}
+.photo-container .photo3{
+  align-self: auto;
+margin-top: 100px;
+}
+figure img{
+  border-radius: 12px;
+  width:100%;
+  max-width:545px;
+  height:auto;
+}
+
+figcaption:nth-child(even){
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+}
+
+figcaption:nth-child(odd){
+  font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #333333;
+}
+
+.seemore{
+  align-self: flex-end;
+  display:flex;
+  align-items: flex-start;
+}
+.see{
+  margin:0;
+  color: #2D9CDB;
+  text-decoration: none;
+  font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+}
+.seemore #arrow{
+  color: #2D9CDB;
+font-size: 36px;
+}
+.seemore:hover .see{
+  align-self: center;
+  font-size: 35px;
+}
+.seemore:hover #arrow{
+  font-size: 40px;
+}
