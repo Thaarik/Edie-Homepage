@@ -660,8 +660,8 @@ footer {
 
 @media only screen and (max-width: 786px) {
 
-  nav .navbar a {
-    visibility: hidden;
+  nav .navbar {
+    display:none;
   }
 
   .section1 .beautiful p {
